@@ -356,15 +356,18 @@
           button[type="submit"] {
             background-color: #bc973d;
           }
+          .contact .contact-form #contact .form-group span {
+            display: none;
+          }
         </style>
 
         <div class="row">
           <div class="col-12">
-            <p>
-              <strong
-                >Tell us how we can help you in exploring the world of Whiteland
-                Corporation.</strong
-              >
+            <p class="my-4">
+              <strong>
+                Tell us how we can help you in exploring the world of Whiteland
+                Corporation.
+              </strong>
             </p>
           </div>
           <div class="col-lg-4">
@@ -383,7 +386,7 @@
           <div class="col-lg-8">
             <div
               class="contact-form px-lg-5 py-lg-4 p-3 border border-secondary rounded">
-              <h4 style="font-weight: 400; font-size: 45px" class="mb-5">
+              <h4 style="font-weight: 400; font-size: 45px" class="mb-4">
                 Fill This Form
               </h4>
               <form id="contact" name="contact" method="post">
@@ -395,6 +398,7 @@
                         name="name"
                         id="name"
                         autocomplete="off"
+                        placeholder="Your name"
                         required />
                       <span>Your name</span>
                     </div>
@@ -407,6 +411,7 @@
                         name="email"
                         id="email"
                         autocomplete="off"
+                        placeholder="Your e-mail"
                         required />
                       <span>Your e-mail</span>
                     </div>
@@ -419,6 +424,7 @@
                         name="subject"
                         id="subject"
                         autocomplete="off"
+                        placeholder="Phone"
                         required />
                       <span>Phone</span>
                     </div>
@@ -451,6 +457,7 @@
                         name="message"
                         id="message"
                         autocomplete="off"
+                        placeholder="Your message"
                         required></textarea>
                       <span>Your message</span>
                     </div>
