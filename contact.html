@@ -68,7 +68,9 @@
     <link
       rel="stylesheet"
       href="https://trisol.iccplfoundation.org/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="https://trisol.iccplfoundation.org/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://trisol.iccplfoundation.org/css/style.css" />
     <style>
       .whatsapp-button {
         position: fixed;
@@ -299,7 +301,7 @@
       <!-- end container -->
     </header>
     <!-- end page-header -->
-    <section class="contact">
+    <section class="contact overflow-visible">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 wow fadeInUp">
@@ -328,55 +330,83 @@
           <!-- end col-3 -->
         </div>
         <!-- end row -->
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="map">
-              <div class="pattern-bg" data-stellar-ratio="1.03"></div>
-              <!-- end pattern-bg -->
-              <div class="holder" data-stellar-ratio="1.07">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4540289643105!2d77.37621297550018!3d28.616151475673707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce557e691d21b%3A0xdc87b69d6594c38a!2sTrisol%20Red%20Infraventures%20Pvt%20Ltd.!5e0!3m2!1sen!2sin!4v1707481253365!5m2!1sen!2sin"
-                  allowfullscreen></iframe>
-              </div>
-              <!-- end holder -->
+
+        <style>
+          .formOptions .formMenu {
+            padding: 20px 0px 20px 20px;
+            border-bottom: 1px solid #bbbbbb;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+          .formOptions .active {
+            background-color: #bc973d;
+            color: #fff;
+            border-bottom: 0px !important;
+            font-weight: bold;
+          }
+          button[type="submit"] {
+            background-color: #bc973d;
+          }
+        </style>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="formOptions sticky-top">
+              <div class="formMenu active">Media Enquiry</div>
+
+              <div class="formMenu">Investment Enquiry</div>
+
+              <div class="formMenu">Job Opportunity</div>
+
+              <div class="formMenu">Association</div>
+              <div class="formMenu">Customer Care</div>
+              <div class="formMenu">Leasing Enquiry</div>
             </div>
-            <!-- end map -->
           </div>
-          <!-- end col-6 -->
-          <div class="col-lg-6">
-            <div class="contact-form">
-              <h4 style="font-weight: 400; font-size: 45px">Fill This Form</h4>
+          <div class="col-lg-8">
+            <div
+              class="contact-form p-lg-5 p-3 border border-secondary rounded">
+              <h4 style="font-weight: 400; font-size: 45px" class="mb-5">
+                Fill This Form
+              </h4>
               <form id="contact" name="contact" method="post">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    autocomplete="off"
-                    required />
-                  <span>Your name</span>
-                </div>
-                <!-- end form-group -->
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="email"
-                    id="email"
-                    autocomplete="off"
-                    required />
-                  <span>Your e-mail</span>
-                </div>
-                <!-- end form-group -->
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    autocomplete="off"
-                    required />
-                  <span>Phone</span>
-                </div>
-                <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        autocomplete="off"
+                        required />
+                      <span>Your name</span>
+                    </div>
+                    <!-- end form-group -->
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        autocomplete="off"
+                        required />
+                      <span>Your e-mail</span>
+                    </div>
+                    <!-- end form-group -->
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        autocomplete="off"
+                        required />
+                      <span>Phone</span>
+                    </div>
+                  </div>
+                  <!-- <div class="form-group">
                   <label for="enquiry">Select enquiry type</label>
                   <select name="enquiry" id="enquiry">
                     <option value="Media Enquiry">Media Enquiry</option>
@@ -384,20 +414,12 @@
                       Investment Enquir
                     </option>
                     <option value="Job Opportunity">Job Opportunity</option>
-                    <option
-                      value="Association
-            ">
-                      Association
-                    </option>
+                    <option value="Association">Association</option>
                     <option value="Customer Care">Customer Care</option>
-                    <option
-                      value="Leasing Enquiry
-            ">
-                      Leasing Enquiry
-                    </option>
+                    <option value="Leasing Enquiry">Leasing Enquiry</option>
                   </select>
-                </div>
-                <!-- <div class="cv">
+                </div> -->
+                  <!-- <div class="cv">
                   <span>Upload Your CV</span><br><br>
   
                 <input type="file" id="myFile" name="filename"><br>
@@ -405,20 +427,23 @@
   
 
                 </div> <br> -->
-                <!-- end form-group -->
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    autocomplete="off"
-                    required></textarea>
-                  <span>Your message</span>
-                </div>
-                <!-- end form-group -->
-                <div class="form-group">
-                  <button id="submit" type="submit" name="submit">
-                    Submit
-                  </button>
+                  <!-- end form-group -->
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        autocomplete="off"
+                        required></textarea>
+                      <span>Your message</span>
+                    </div>
+                    <!-- end form-group -->
+                  </div>
+                  <div class="col-12">
+                    <button id="submit" type="submit" name="submit">
+                      Submit
+                    </button>
+                  </div>
                 </div>
                 <!-- end form-group -->
               </form>
@@ -452,6 +477,18 @@
       <!-- end container -->
     </section>
     <!-- end contact -->
+
+    <section class="pb-5">
+      <div class="holder" data-stellar-ratio="1.07">
+        <iframe
+          class="w-100 border-0"
+          style="height: 350px"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4540289643105!2d77.37621297550018!3d28.616151475673707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce557e691d21b%3A0xdc87b69d6594c38a!2sTrisol%20Red%20Infraventures%20Pvt%20Ltd.!5e0!3m2!1sen!2sin!4v1707481253365!5m2!1sen!2sin"
+          allowfullscreen></iframe>
+      </div>
+      <!-- end holder -->
+    </section>
+
     <a href="https://wa.me/8750577477" class="whatsapp-button" target="_blank">
       <img src="image/WhatsApp_icon.png.webp" alt="WhatsApp Icon" />
     </a>
@@ -645,7 +682,8 @@
     <!-- end footer -->
 
     <!-- JS FILES -->
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -657,5 +695,12 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/animtion.js"></script>
+
+    <script>
+      $(".formMenu").on("click", function () {
+        $(".formMenu").removeClass("active");
+        $(this).addClass("active");
+      });
+    </script>
   </body>
 </html>
