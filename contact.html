@@ -344,12 +344,29 @@
             border-bottom: 0px !important;
             font-weight: bold;
           }
+          textarea {
+            height: 111px;
+          }
+          .contact .contact-form #contact .form-group {
+            margin-bottom: 20px;
+          }
+          input[type="checkbox"]:checked {
+            accent-color: #bc973d;
+          }
           button[type="submit"] {
             background-color: #bc973d;
           }
         </style>
 
         <div class="row">
+          <div class="col-12">
+            <p>
+              <strong
+                >Tell us how we can help you in exploring the world of Whiteland
+                Corporation.</strong
+              >
+            </p>
+          </div>
           <div class="col-lg-4">
             <div class="formOptions sticky-top">
               <div class="formMenu active">Media Enquiry</div>
@@ -365,13 +382,13 @@
           </div>
           <div class="col-lg-8">
             <div
-              class="contact-form p-lg-5 p-3 border border-secondary rounded">
+              class="contact-form px-lg-5 py-lg-4 p-3 border border-secondary rounded">
               <h4 style="font-weight: 400; font-size: 45px" class="mb-5">
                 Fill This Form
               </h4>
               <form id="contact" name="contact" method="post">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-12">
                     <div class="form-group">
                       <input
                         type="text"
@@ -383,7 +400,7 @@
                     </div>
                     <!-- end form-group -->
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-12">
                     <div class="form-group">
                       <input
                         type="text"
@@ -438,6 +455,14 @@
                       <span>Your message</span>
                     </div>
                     <!-- end form-group -->
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-2">
+                      <input type="checkbox" name="" id="privacy-policy" />
+                      <label for="privacy-policy" class="mb-0"
+                        >I have read and agree to the Privacy Policy</label
+                      >
+                    </div>
                   </div>
                   <div class="col-12">
                     <button id="submit" type="submit" name="submit">
