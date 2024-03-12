@@ -391,6 +391,7 @@
               </h4>
               <form id="contact" name="contact" method="post" action="call-back.php">
                 <div class="row">
+                  <input type="hidden" name="subject" value="" id="subject" />
                   <div class="col-12">
                     <div class="form-group">
                       <input
@@ -729,9 +730,12 @@
     <script src="js/animtion.js"></script>
 
     <script>
+      let subject = $('.formMenu.active').text();
+      $('#subject').val(subject);
       $(".formMenu").on("click", function () {
         $(".formMenu").removeClass("active");
         $(this).addClass("active");
+        $('#subject').val($(this).text());
       });
     </script>
   </body>
