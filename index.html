@@ -899,7 +899,7 @@
         const hasAgreed = localStorage.getItem('hasAgreed');
 
         // If not agreed yet and not reloading the page after agreeing, show the modal after 3 seconds
-        if (hasAgreed && !sessionStorage.getItem('agreedAndReloaded')) {
+        if (!hasAgreed && !sessionStorage.getItem('agreedAndReloaded')) {
             setTimeout(function () {
                 $('#exampleModal').modal('show');
             }, 3000);
@@ -913,6 +913,7 @@
             // Set a session storage flag to indicate that the user has agreed and reloaded the page
             sessionStorage.setItem('agreedAndReloaded', true);
         });
+
     </script>
 </body>
 
